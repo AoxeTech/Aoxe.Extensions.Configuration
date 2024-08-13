@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <xmlApp>
+        <xmlName>xmlApp</xmlName>
+        <xmlVersion>1.2.3</xmlVersion>
+    </xmlApp>
+    
+    <appSettings>
+        <add key="appname" value="XmlApp"/>
+        <add key="version" value="1.2.3"/>
+        <add key="enabled" value="true"/>
+    </appSettings>
+
+    <database>
+        <host>localhost</host>
+        <port>5432</port>
+        <credentials>
+            <username>admin</username>
+            <password>secret</password>
+        </credentials>
+        <dbname>myappdb</dbname>
+    </database>
+
+    <logging>
+        <level>DEBUG</level>
+        <file>/var/log/myapp.log</file>
+    </logging>
+
+    <paths>
+        <home>/home/user</home>
+        <config>/etc/myapp/config.xml</config>
+        <data>/var/lib/myapp/data</data>
+    </paths>
+
+    <userSettings>
+        <theme>dark</theme>
+        <language>en-US</language>
+        <notifications>true</notifications>
+    </userSettings>
+
+    <network>
+        <proxy>http://proxy.example.com:8080</proxy>
+        <timeout>30</timeout>
+        <retry>3</retry>
+    </network>
+
+    <advanced>
+        <cacheSize>1024</cacheSize>
+        <maxThreads>8</maxThreads>
+        <debugMode>false</debugMode>
+    </advanced>
+
+    <plugins>
+        <plugin name="plugin1" status="enabled"/>
+        <plugin name="plugin2" status="disabled"/>
+        <plugin name="plugin3" status="enabled"/>
+    </plugins>
+
+    <encryption>
+        <method>AES256</method>
+        <key>abcdef1234567890</key>
+    </encryption>
+
+    <servers>
+        <server>
+            <name>alpha</name>
+            <ip>192.168.1.1</ip>
+            <role>frontend</role>
+        </server>
+        <server>
+            <name>beta</name>
+            <ip>192.168.1.2</ip>
+            <role>backend</role>
+        </server>
+        <server>
+            <name>gamma</name>
+            <ip>192.168.1.3</ip>
+            <role>database</role>
+        </server>
+    </servers>
+</configuration>

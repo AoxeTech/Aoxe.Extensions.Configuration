@@ -2,7 +2,7 @@
 
 public static class TomlynConfigurationExtension
 {
-    public static IConfigurationBuilder AddJsonStream(
+    public static IConfigurationBuilder AddTomlStream(
         this IConfigurationBuilder builder,
         Stream stream
     ) => builder.Add(new AoxeStreamConfigurationSource(new TomlFlattener()) { Stream = stream });

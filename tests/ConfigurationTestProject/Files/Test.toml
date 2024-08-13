@@ -1,0 +1,59 @@
+﻿[tomlgeneral]
+tomlappname = "TomlMyApp"
+tomlversion = "1.2.3"
+tomlenabled = true
+
+[database]
+host = "localhost"
+port = 5432
+username = "admin"
+password = "secret"
+dbname = "myappdb"
+
+[logging]
+level = "DEBUG"
+file = "/var/log/myapp.log"
+
+[paths]
+home = "/home/user"
+config = "/etc/myapp/config.toml"
+data = "/var/lib/myapp/data"
+
+[user_settings]
+theme = "dark"
+language = "en-US"
+notifications = true
+
+[network]
+proxy = "http://proxy.example.com:8080"
+timeout = 30
+retry = 3
+
+[advanced]
+cache_size = 1024
+max_threads = 8
+debug_mode = false
+
+[plugins]
+plugin1 = "enabled"
+plugin2 = "disabled"
+plugin3 = "enabled"
+
+[encryption]
+method = "AES256"
+key = "abcdef1234567890"
+
+[[servers]]
+name = "alpha"
+ip = "192.168.1.1"
+role = "frontend"
+
+[[servers]]
+name = "beta"
+ip = "192.168.1.2"
+role = "backend"
+
+[[servers]]
+name = "gamma"
+ip = "192.168.1.3"
+role = "database"

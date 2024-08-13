@@ -2,7 +2,7 @@
 
 public static class YamlDotNetConfigurationExtension
 {
-    public static IConfigurationBuilder AddJsonStream(
+    public static IConfigurationBuilder AddYamlStream(
         this IConfigurationBuilder builder,
         Stream stream
     ) => builder.Add(new AoxeStreamConfigurationSource(new YamlFlattener()) { Stream = stream });

@@ -1,9 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFrameworks>net48;net6.0;net8.0;net9.0</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
@@ -24,6 +25,32 @@
 
     <ItemGroup>
         <Using Include="Xunit"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Aoxe.Extensions.Configuration.IniParser\Aoxe.Extensions.Configuration.IniParser.csproj" />
+      <ProjectReference Include="..\..\src\Aoxe.Extensions.Configuration.NewtonsoftJson\Aoxe.Extensions.Configuration.NewtonsoftJson.csproj" />
+      <ProjectReference Include="..\..\src\Aoxe.Extensions.Configuration.Tomlyn\Aoxe.Extensions.Configuration.Tomlyn.csproj" />
+      <ProjectReference Include="..\..\src\Aoxe.Extensions.Configuration.Xml\Aoxe.Extensions.Configuration.Xml.csproj" />
+      <ProjectReference Include="..\..\src\Aoxe.Extensions.Configuration.YamlDotNet\Aoxe.Extensions.Configuration.YamlDotNet.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Files\Test.ini">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Files\Test.json">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Files\Test.toml">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Files\Test.xml">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Files\Test.yaml">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
 </Project>
