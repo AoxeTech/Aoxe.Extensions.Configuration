@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configurati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.YamlDotNet", "src\Aoxe.Extensions.Configuration.YamlDotNet\Aoxe.Extensions.Configuration.YamlDotNet.csproj", "{6B7B85AD-66DF-4408-B22B-05F19FD970DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationTestProject", "tests\ConfigurationTestProject\ConfigurationTestProject.csproj", "{BD69A2F2-2DD9-4395-8AD8-CC24D5CE1CB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,7 @@ Global
 		{5DDD9158-27BC-40A8-805D-8E59CDD80BFB} = {BED7F780-C791-4C6F-8691-10F58AD06F47}
 		{EE75E0E9-8D2B-4CC8-9A16-DDD4707194B5} = {BED7F780-C791-4C6F-8691-10F58AD06F47}
 		{6B7B85AD-66DF-4408-B22B-05F19FD970DA} = {BED7F780-C791-4C6F-8691-10F58AD06F47}
+		{BD69A2F2-2DD9-4395-8AD8-CC24D5CE1CB6} = {7C408E2B-EAD2-465A-80F8-822F9ABAB726}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D9B71D90-5785-4837-AAF3-AB6E8724EDD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -99,5 +102,9 @@ Global
 		{6B7B85AD-66DF-4408-B22B-05F19FD970DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B7B85AD-66DF-4408-B22B-05F19FD970DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B7B85AD-66DF-4408-B22B-05F19FD970DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD69A2F2-2DD9-4395-8AD8-CC24D5CE1CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD69A2F2-2DD9-4395-8AD8-CC24D5CE1CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD69A2F2-2DD9-4395-8AD8-CC24D5CE1CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD69A2F2-2DD9-4395-8AD8-CC24D5CE1CB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

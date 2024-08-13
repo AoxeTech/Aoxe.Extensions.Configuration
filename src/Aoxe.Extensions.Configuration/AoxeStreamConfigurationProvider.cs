@@ -1,7 +1,9 @@
 ﻿namespace Aoxe.Extensions.Configuration;
 
-public class AoxeStreamConfigurationProvider(AoxeStreamConfigurationSource source, IFlatten flatten)
-    : StreamConfigurationProvider(source)
+public class AoxeStreamConfigurationProvider(
+    AoxeStreamConfigurationSource source,
+    IFlattener flattener
+) : StreamConfigurationProvider(source)
 {
-    public override void Load(Stream stream) => Data = flatten.Flatten(stream);
+    public override void Load(Stream stream) => Data = flattener.Flatten(stream);
 }

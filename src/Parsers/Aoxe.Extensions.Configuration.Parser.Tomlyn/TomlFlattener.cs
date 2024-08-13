@@ -1,6 +1,6 @@
 ﻿namespace Aoxe.Extensions.Configuration.Parser.Tomlyn;
 
-public class TomlFlattener : IFlatten
+public class TomlFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {

@@ -1,6 +1,6 @@
 ﻿namespace Aoxe.Extensions.Configuration.Parser.YamlDotNet;
 
-public class YamlFlattener : IFlatten
+public class YamlFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {

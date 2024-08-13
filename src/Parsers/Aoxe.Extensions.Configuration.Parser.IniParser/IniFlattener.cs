@@ -1,6 +1,6 @@
 ﻿namespace Aoxe.Extensions.Configuration.Parser.IniParser;
 
-public class IniFlattener : IFlatten
+public class IniFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {
