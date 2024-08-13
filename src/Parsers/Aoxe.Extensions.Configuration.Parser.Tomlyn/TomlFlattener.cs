@@ -2,10 +2,10 @@
 
 public class TomlFlattener : IFlattener
 {
-    public Dictionary<string, string?> Flatten(Stream stream)
+    public Dictionary<string, string?> Flatten(Stream utf8Stream)
     {
         var ms = new MemoryStream();
-        stream.CopyTo(ms);
+        utf8Stream.CopyTo(ms);
         var bytes = ms.ToArray();
         var tomlTable = Toml.Parse(bytes).ToModel();
         var result = new Dictionary<string, string?>();
