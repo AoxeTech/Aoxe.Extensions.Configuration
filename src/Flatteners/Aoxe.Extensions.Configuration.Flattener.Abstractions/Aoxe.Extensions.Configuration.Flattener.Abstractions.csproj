@@ -5,9 +5,9 @@
         <PackageVersion>2024.1.0</PackageVersion>
         <Version>2024.1.0</Version>
         <Description>The abstractions for Aoxe Configuration flatteners.</Description>
-        <PackageTags>Aoxe;Serializer;Abstractions</PackageTags>
+        <PackageTags>Aoxe;Serializer;Parser;Flattener;Abstractions</PackageTags>
         <PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/AoxeTech/Aoxe.Serialization</RepositoryUrl>
+        <RepositoryUrl>https://github.com/AoxeTech/Aoxe.Extensions.Configuration</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
