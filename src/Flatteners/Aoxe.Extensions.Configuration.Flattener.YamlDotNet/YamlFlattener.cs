@@ -1,4 +1,4 @@
-﻿namespace Aoxe.Extensions.Configuration.Parser.YamlDotNet;
+﻿namespace Aoxe.Extensions.Configuration.Flattener.YamlDotNet;
 
 public class YamlFlattener : IFlattener
 {

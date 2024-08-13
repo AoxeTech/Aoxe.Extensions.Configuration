@@ -1,4 +1,4 @@
-﻿namespace Aoxe.Extensions.Configuration.Parser.Xml;
+﻿namespace Aoxe.Extensions.Configuration.Flattener.Xml;
 
 public class XmlFlattener : IFlattener
 {

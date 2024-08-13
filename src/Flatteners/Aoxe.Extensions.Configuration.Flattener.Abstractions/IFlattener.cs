@@ -1,4 +1,4 @@
-﻿namespace Aoxe.Extensions.Configuration.Parser.Abstractions;
+﻿namespace Aoxe.Extensions.Configuration.Flattener.Abstractions;
 
 public interface IFlattener
 {

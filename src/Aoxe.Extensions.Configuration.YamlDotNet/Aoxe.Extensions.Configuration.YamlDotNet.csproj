@@ -9,8 +9,8 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Aoxe.Extensions.Configuration\Aoxe.Extensions.Configuration.csproj" />
-        <ProjectReference Include="..\Parsers\Aoxe.Extensions.Configuration.Parser.Abstractions\Aoxe.Extensions.Configuration.Parser.Abstractions.csproj" />
-        <ProjectReference Include="..\Parsers\Aoxe.Extensions.Configuration.Parser.YamlDotNet\Aoxe.Extensions.Configuration.Parser.YamlDotNet.csproj" />
+        <ProjectReference Include="..\Flatteners\Aoxe.Extensions.Configuration.Flattener.Abstractions\Aoxe.Extensions.Configuration.Flattener.Abstractions.csproj" />
+        <ProjectReference Include="..\Flatteners\Aoxe.Extensions.Configuration.Flattener.YamlDotNet\Aoxe.Extensions.Configuration.Flattener.YamlDotNet.csproj" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">

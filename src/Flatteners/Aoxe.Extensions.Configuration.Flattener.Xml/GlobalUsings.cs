@@ -2,4 +2,4 @@
 
 global using System.Xml;
 global using System.Xml.Linq;
-global using Aoxe.Extensions.Configuration.Parser.Abstractions;
+global using Aoxe.Extensions.Configuration.Flattener.Abstractions;

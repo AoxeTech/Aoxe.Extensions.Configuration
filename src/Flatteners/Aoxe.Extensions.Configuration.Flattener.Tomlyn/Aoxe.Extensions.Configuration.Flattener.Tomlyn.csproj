@@ -8,11 +8,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="YamlDotNet" Version="16.0.0" />
+        <PackageReference Include="Tomlyn" Version="0.17.0" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Aoxe.Extensions.Configuration.Parser.Abstractions\Aoxe.Extensions.Configuration.Parser.Abstractions.csproj" />
+        <ProjectReference Include="..\Aoxe.Extensions.Configuration.Flattener.Abstractions\Aoxe.Extensions.Configuration.Flattener.Abstractions.csproj" />
     </ItemGroup>
 
 </Project>

@@ -4,19 +4,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BED7F780-C79
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7C408E2B-EAD2-465A-80F8-822F9ABAB726}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsers", "Parsers", "{7F07D58F-5190-4A7E-8353-0CD359995042}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Flatteners", "Flatteners", "{7F07D58F-5190-4A7E-8353-0CD359995042}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Parser.IniParser", "src\Parsers\Aoxe.Extensions.Configuration.Parser.IniParser\Aoxe.Extensions.Configuration.Parser.IniParser.csproj", "{D9B71D90-5785-4837-AAF3-AB6E8724EDD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Flattener.IniParser", "src\Flatteners\Aoxe.Extensions.Configuration.Flattener.IniParser\Aoxe.Extensions.Configuration.Flattener.IniParser.csproj", "{D9B71D90-5785-4837-AAF3-AB6E8724EDD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Parser.NewtonsoftJson", "src\Parsers\Aoxe.Extensions.Configuration.Parser.NewtonsoftJson\Aoxe.Extensions.Configuration.Parser.NewtonsoftJson.csproj", "{241EC8E9-9D05-482E-8B87-AB2FC209023A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Flattener.NewtonsoftJson", "src\Flatteners\Aoxe.Extensions.Configuration.Flattener.NewtonsoftJson\Aoxe.Extensions.Configuration.Flattener.NewtonsoftJson.csproj", "{241EC8E9-9D05-482E-8B87-AB2FC209023A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Parser.Tomlyn", "src\Parsers\Aoxe.Extensions.Configuration.Parser.Tomlyn\Aoxe.Extensions.Configuration.Parser.Tomlyn.csproj", "{CF8CA283-832F-407A-95CE-4FE2557DD056}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Flattener.Tomlyn", "src\Flatteners\Aoxe.Extensions.Configuration.Flattener.Tomlyn\Aoxe.Extensions.Configuration.Flattener.Tomlyn.csproj", "{CF8CA283-832F-407A-95CE-4FE2557DD056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Parser.YamlDotNet", "src\Parsers\Aoxe.Extensions.Configuration.Parser.YamlDotNet\Aoxe.Extensions.Configuration.Parser.YamlDotNet.csproj", "{BFAE148C-B28E-4B60-AA97-C4A489E84CA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Flattener.YamlDotNet", "src\Flatteners\Aoxe.Extensions.Configuration.Flattener.YamlDotNet\Aoxe.Extensions.Configuration.Flattener.YamlDotNet.csproj", "{BFAE148C-B28E-4B60-AA97-C4A489E84CA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Parser.Xml", "src\Parsers\Aoxe.Extensions.Configuration.Parser.Xml\Aoxe.Extensions.Configuration.Parser.Xml.csproj", "{45D9361D-0D47-4201-91B8-5B778C8B7F2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Flattener.Xml", "src\Flatteners\Aoxe.Extensions.Configuration.Flattener.Xml\Aoxe.Extensions.Configuration.Flattener.Xml.csproj", "{45D9361D-0D47-4201-91B8-5B778C8B7F2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Parser.Abstractions", "src\Parsers\Aoxe.Extensions.Configuration.Parser.Abstractions\Aoxe.Extensions.Configuration.Parser.Abstractions.csproj", "{22F4CA9A-3180-400B-86CB-E68395BF6EB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration.Flattener.Abstractions", "src\Flatteners\Aoxe.Extensions.Configuration.Flattener.Abstractions\Aoxe.Extensions.Configuration.Flattener.Abstractions.csproj", "{22F4CA9A-3180-400B-86CB-E68395BF6EB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aoxe.Extensions.Configuration", "src\Aoxe.Extensions.Configuration\Aoxe.Extensions.Configuration.csproj", "{38E4BDDB-17CB-4ADF-B746-03D50F4BA526}"
 EndProject

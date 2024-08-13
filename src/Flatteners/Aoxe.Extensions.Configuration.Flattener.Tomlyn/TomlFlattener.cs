@@ -1,4 +1,4 @@
-﻿namespace Aoxe.Extensions.Configuration.Parser.Tomlyn;
+﻿namespace Aoxe.Extensions.Configuration.Flattener.Tomlyn;
 
 public class TomlFlattener : IFlattener
 {

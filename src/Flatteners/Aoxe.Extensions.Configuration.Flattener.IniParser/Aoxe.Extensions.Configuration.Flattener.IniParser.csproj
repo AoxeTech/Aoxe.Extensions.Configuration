@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Aoxe.Extensions.Configuration.Parser.Abstractions\Aoxe.Extensions.Configuration.Parser.Abstractions.csproj" />
+      <ProjectReference Include="..\Aoxe.Extensions.Configuration.Flattener.Abstractions\Aoxe.Extensions.Configuration.Flattener.Abstractions.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace Aoxe.Extensions.Configuration.Parser.IniParser;
+﻿namespace Aoxe.Extensions.Configuration.Flattener.IniParser;
 
 public class IniFlattener : IFlattener
 {

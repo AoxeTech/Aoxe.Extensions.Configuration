@@ -1,4 +1,4 @@
-﻿namespace Aoxe.Extensions.Configuration.Parser.NewtonsoftJson;
+﻿namespace Aoxe.Extensions.Configuration.Flattener.NewtonsoftJson;
 
 public class JsonFlattener : IFlattener
 {
