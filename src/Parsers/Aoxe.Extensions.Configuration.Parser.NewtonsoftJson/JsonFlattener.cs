@@ -1,6 +1,6 @@
 ﻿namespace Aoxe.Extensions.Configuration.Parser.NewtonsoftJson;
 
-public class JsonFlattener : IParser
+public class JsonFlattener : IFlatten
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {

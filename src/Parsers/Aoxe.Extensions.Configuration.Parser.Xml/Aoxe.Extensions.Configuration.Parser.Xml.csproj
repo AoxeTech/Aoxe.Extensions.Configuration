@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Aoxe.Extensions.Configuration.Abstractions\Aoxe.Extensions.Configuration.Abstractions.csproj" />
+        <ProjectReference Include="..\Aoxe.Extensions.Configuration.Parser.Abstractions\Aoxe.Extensions.Configuration.Parser.Abstractions.csproj" />
     </ItemGroup>
 
 </Project>

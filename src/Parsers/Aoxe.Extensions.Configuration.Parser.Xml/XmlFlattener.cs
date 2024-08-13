@@ -1,6 +1,6 @@
 ﻿namespace Aoxe.Extensions.Configuration.Parser.Xml;
 
-public class XmlFlattener : IParser
+public class XmlFlattener : IFlatten
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {
