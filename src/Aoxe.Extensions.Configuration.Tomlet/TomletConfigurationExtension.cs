@@ -1,12 +1,11 @@
-﻿namespace Aoxe.Extensions.Configuration.Tomlyn;
+﻿namespace Aoxe.Extensions.Configuration.Tomlet;
 
-public static class TomlynConfigurationExtension
+public static class TomletConfigurationExtension
 {
     public static IConfigurationBuilder AddTomlStream(
         this IConfigurationBuilder builder,
-        Stream utf8Stream
-    ) =>
-        builder.Add(new AoxeStreamConfigurationSource(new TomlFlattener()) { Stream = utf8Stream });
+        Stream stream
+    ) => builder.Add(new AoxeStreamConfigurationSource(new TomlFlattener()) { Stream = stream });
 
     public static IConfigurationBuilder AddTomlFile(
         this IConfigurationBuilder builder,

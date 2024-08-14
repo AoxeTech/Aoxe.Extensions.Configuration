@@ -1,11 +1,11 @@
-﻿namespace Aoxe.Extensions.Configuration.Flattener.Tomlyn;
+﻿namespace Aoxe.Extensions.Configuration.Flattener.Tomlet;
 
 public class TomlFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {
         var toml = stream.ReadString(Encoding.UTF8).Replace("\uFEFF", string.Empty);
-        var tomlTable = Toml.Parse(toml).ToModel();
+        var tomlTable = new TomlParser().Parse(toml);
         var result = new Dictionary<string, string?>();
         Flatten(tomlTable, result, null);
         return result;

@@ -1,6 +1,6 @@
-﻿namespace Aoxe.Extensions.Configuration.YamlDotNet;
+﻿namespace Aoxe.Extensions.Configuration.SharpYaml;
 
-public static class YamlDotNetConfigurationExtension
+public static class SharpYamlConfigurationExtension
 {
     public static IConfigurationBuilder AddYamlStream(
         this IConfigurationBuilder builder,

@@ -1,0 +1,48 @@
+﻿version: '3.8'
+
+yamlServices:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./web:/usr/share/nginx/html
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    networks:
+      - webnet
+
+  app:
+    image: myapp:latest
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    environment:
+      - APP_ENV=production
+      - DATABASE_URL=postgres://user:password@db:5432/mydatabase
+    depends_on:
+      - db
+    networks:
+      - webnet
+      - dbnet
+
+  db:
+    image: postgres:latest
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=mydatabase
+    networks:
+      - dbnet
+
+networks:
+  webnet:
+  dbnet:
+
+volumes:
+  db-data:

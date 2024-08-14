@@ -12,24 +12,25 @@ public class XmlFlattener : IFlattener
         return result;
     }
 
-    private void Flatten(XElement element, Dictionary<string, string?> result, string? prefix)
+    private static void Flatten(
+        XElement element,
+        Dictionary<string, string?> result,
+        string? prefix
+    )
     {
-        foreach (var child in element.Elements())
-        {
-            var key = Join(prefix, child.Name.LocalName);
-            if (child.HasElements)
+        element
+            .Elements()
+            .Where(p => p is not null)
+            .ForEach(child =>
             {
-                Flatten(child, result, key);
-            }
-            else
-            {
-                result[key] = child.Value;
-            }
-        }
+                var key = Join(prefix, child!.Name.LocalName);
+                if (child.HasElements)
+                    Flatten(child, result, key);
+                else
+                    result[key] = child.Value;
+            });
     }
 
-    private static string Join(string? prefix, string name)
-    {
-        return string.IsNullOrEmpty(prefix) ? name : $"{prefix}:{name}";
-    }
+    private static string Join(string? prefix, string name) =>
+        string.IsNullOrEmpty(prefix) ? name : $"{prefix}:{name}";
 }

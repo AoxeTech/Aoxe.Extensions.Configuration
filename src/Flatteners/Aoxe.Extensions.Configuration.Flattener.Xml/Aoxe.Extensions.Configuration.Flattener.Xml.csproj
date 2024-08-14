@@ -8,6 +8,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Aoxe.Extensions" Version="2024.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
         <ProjectReference Include="..\Aoxe.Extensions.Configuration.Flattener.Abstractions\Aoxe.Extensions.Configuration.Flattener.Abstractions.csproj" />
     </ItemGroup>
 

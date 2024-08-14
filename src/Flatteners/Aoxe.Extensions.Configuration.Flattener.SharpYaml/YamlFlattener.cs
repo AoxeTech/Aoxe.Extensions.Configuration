@@ -1,16 +1,13 @@
-﻿namespace Aoxe.Extensions.Configuration.Flattener.YamlDotNet;
+﻿namespace Aoxe.Extensions.Configuration.Flattener.SharpYaml;
 
 public class YamlFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {
-        var deserializer = new DeserializerBuilder()
-            .WithNamingConvention(CamelCaseNamingConvention.Instance)
-            .Build();
-        var yamlObject = deserializer.Deserialize<Dictionary<object, object?>>(
-            stream.ReadString(Encoding.UTF8)
-        );
+        var yamlObject = new Serializer().Deserialize<Dictionary<object, object?>>(stream);
         var result = new Dictionary<string, string?>();
+        if (yamlObject is null)
+            return result;
         Flatten(yamlObject, result, null);
         return result;
     }
