@@ -11,6 +11,10 @@
         <ProjectReference Include="..\Aoxe.Extensions.Configuration\Aoxe.Extensions.Configuration.csproj" />
         <ProjectReference Include="..\Flatteners\Aoxe.Extensions.Configuration.Flattener.Abstractions\Aoxe.Extensions.Configuration.Flattener.Abstractions.csproj" />
         <ProjectReference Include="..\Flatteners\Aoxe.Extensions.Configuration.Flattener.Tomlet\Aoxe.Extensions.Configuration.Flattener.Tomlet.csproj" />
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
