@@ -2,3 +2,12 @@
 tomlappname = "TomlMyApp"
 tomlversion = "1.2.3"
 tomlenabled = true
+fruits = ["Apple", "Banana", "Cherry"]
+[[products]]
+name = "Hammer"
+sku = 738594937
+
+[[products]]
+name = "Nail"
+sku = 284758393
+color = "gray"

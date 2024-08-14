@@ -15,6 +15,16 @@ public class TomletTest
     }
 
     [Fact]
+    public void TomlEmptyStreamTest()
+    {
+        var configurationBuilder = new ConfigurationBuilder();
+        configurationBuilder.AddTomlStream(new MemoryStream());
+        IConfiguration configuration = configurationBuilder.Build();
+
+        Assert.Null(configuration["tomlgeneral:tomlappname"]);
+    }
+
+    [Fact]
     public void TomlFileTest()
     {
         var configurationBuilder = new ConfigurationBuilder();

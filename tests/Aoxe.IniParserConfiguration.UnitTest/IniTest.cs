@@ -13,6 +13,16 @@ public class IniTest
     }
 
     [Fact]
+    public void IniEmptyStreamTest()
+    {
+        var configurationBuilder = new ConfigurationBuilder();
+        configurationBuilder.AddIniStream(new MemoryStream());
+        IConfiguration configuration = configurationBuilder.Build();
+
+        Assert.Null(configuration["IniGeneral:IniAppname"]);
+    }
+
+    [Fact]
     public void IniFileTest()
     {
         var configurationBuilder = new ConfigurationBuilder();

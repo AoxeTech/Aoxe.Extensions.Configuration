@@ -13,6 +13,16 @@ public class NewtonsoftJsonTest
     }
 
     [Fact]
+    public void JsonEmptyStreamTest()
+    {
+        var configurationBuilder = new ConfigurationBuilder();
+        configurationBuilder.AddJsonStream(new MemoryStream());
+        IConfiguration configuration = configurationBuilder.Build();
+
+        Assert.Null(configuration["jsonApp:jsonName"]);
+    }
+
+    [Fact]
     public void JsonFileTest()
     {
         var configurationBuilder = new ConfigurationBuilder();

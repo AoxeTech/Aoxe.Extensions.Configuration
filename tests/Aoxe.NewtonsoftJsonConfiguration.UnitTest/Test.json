@@ -2,7 +2,16 @@
   "jsonApp": {
     "jsonName": "JsonApp",
     "jsonVersion": "1.2.3",
-    "jsonEnabled": true
+    "jsonEnabled": true,
+    "jsonNull": null,
+    "jsonArray": [
+      {
+        "name": "apple"
+      },
+      {
+        "name": "pear"
+      }
+    ]
   },
   "database": {
     "host": "localhost",

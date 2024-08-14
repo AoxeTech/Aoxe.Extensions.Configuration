@@ -4,10 +4,12 @@ public class IniFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {
+        var result = new Dictionary<string, string?>();
+        if (stream.IsNullOrEmpty())
+            return result;
         IniData iniData;
         using (var streamReader = new StreamReader(stream))
             iniData = new FileIniDataParser().ReadData(streamReader);
-        var result = new Dictionary<string, string?>();
 
         foreach (var section in iniData.Sections)
         foreach (var keyData in section.Keys)

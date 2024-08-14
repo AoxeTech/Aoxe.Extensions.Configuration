@@ -13,6 +13,16 @@ public class YamlDotNetTest
     }
 
     [Fact]
+    public void YamlEmptyStreamTest()
+    {
+        var configurationBuilder = new ConfigurationBuilder();
+        configurationBuilder.AddYamlStream(new MemoryStream());
+        IConfiguration configuration = configurationBuilder.Build();
+
+        Assert.Null(configuration["yamlServices:web:image"]);
+    }
+
+    [Fact]
     public void YamlFileTest()
     {
         var configurationBuilder = new ConfigurationBuilder();

@@ -4,8 +4,10 @@ public class YamlFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {
-        var yamlObject = new Serializer().Deserialize<Dictionary<object, object?>>(stream);
         var result = new Dictionary<string, string?>();
+        if (stream.IsNullOrEmpty())
+            return result;
+        var yamlObject = new Serializer().Deserialize<Dictionary<object, object?>>(stream);
         if (yamlObject is null)
             return result;
         Flatten(yamlObject, result, null);

@@ -4,9 +4,11 @@ public class TomlFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {
+        var result = new Dictionary<string, string?>();
+        if (stream.IsNullOrEmpty())
+            return result;
         var toml = stream.ReadString(Encoding.UTF8).Replace("\uFEFF", string.Empty);
         var tomlTable = Toml.Parse(toml).ToModel();
-        var result = new Dictionary<string, string?>();
         Flatten(tomlTable, result, null);
         return result;
     }

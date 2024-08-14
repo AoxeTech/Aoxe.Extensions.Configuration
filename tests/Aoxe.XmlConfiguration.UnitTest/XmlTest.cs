@@ -13,6 +13,16 @@ public class XmlTest
     }
 
     [Fact]
+    public void XmlEmptyStreamTest()
+    {
+        var configurationBuilder = new ConfigurationBuilder();
+        configurationBuilder.AddXmlStream(new MemoryStream());
+        IConfiguration configuration = configurationBuilder.Build();
+
+        Assert.Null(configuration["xmlApp:xmlName"]);
+    }
+
+    [Fact]
     public void XmlFileTest()
     {
         var configurationBuilder = new ConfigurationBuilder();

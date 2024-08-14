@@ -4,10 +4,12 @@ public class XmlFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {
+        var result = new Dictionary<string, string?>();
+        if (stream.IsNullOrEmpty())
+            return result;
         var xmlDocument = XDocument.Load(stream);
         if (xmlDocument.Root is null)
             throw new XmlException("The XML document is empty or malformed.");
-        var result = new Dictionary<string, string?>();
         Flatten(xmlDocument.Root, result, null);
         return result;
     }
@@ -20,7 +22,9 @@ public class XmlFlattener : IFlattener
     {
         element
             .Elements()
+#if NETSTANDARD2_0
             .Where(p => p is not null)
+#endif
             .ForEach(child =>
             {
                 var key = Join(prefix, child!.Name.LocalName);

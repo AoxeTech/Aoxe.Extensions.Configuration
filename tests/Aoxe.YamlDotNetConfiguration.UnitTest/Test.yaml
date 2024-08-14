@@ -12,6 +12,10 @@ yamlServices:
       - NGINX_PORT=80
     networks:
       - webnet
+    array:
+      - apple
+      - pear
+      - orange
 
   app:
     image: myapp:latest

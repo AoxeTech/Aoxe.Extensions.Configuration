@@ -4,13 +4,15 @@ public class YamlFlattener : IFlattener
 {
     public Dictionary<string, string?> Flatten(Stream stream)
     {
+        var result = new Dictionary<string, string?>();
+        if (stream.IsNullOrEmpty())
+            return result;
         var deserializer = new DeserializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance)
             .Build();
         var yamlObject = deserializer.Deserialize<Dictionary<object, object?>>(
             stream.ReadString(Encoding.UTF8)
         );
-        var result = new Dictionary<string, string?>();
         Flatten(yamlObject, result, null);
         return result;
     }

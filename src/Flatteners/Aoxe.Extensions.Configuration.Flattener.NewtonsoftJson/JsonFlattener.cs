@@ -5,6 +5,8 @@ public class JsonFlattener : IFlattener
     public Dictionary<string, string?> Flatten(Stream stream)
     {
         var result = new Dictionary<string, string?>();
+        if (stream.IsNullOrEmpty())
+            return result;
         var data = new JsonSerializer().Deserialize(new StreamReader(stream), typeof(JObject));
         if (data is null)
             return result;
