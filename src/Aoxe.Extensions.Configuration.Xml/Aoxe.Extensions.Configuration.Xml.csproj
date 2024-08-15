@@ -2,10 +2,10 @@
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;net6.0;net8.0;net9.0</TargetFrameworks>
-        <PackageVersion>2024.1.0</PackageVersion>
-        <Version>2024.1.0</Version>
+        <PackageVersion>2024.1.1</PackageVersion>
+        <Version>2024.1.1</Version>
         <Description>Stream and file configurations implement by xml.</Description>
-        <PackageTags>Aoxe;Serializer;Parser;Flattener;Abstractions</PackageTags>
+        <PackageTags>Aoxe;Configuration;Xml</PackageTags>
         <PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
         <RepositoryUrl>https://github.com/AoxeTech/Aoxe.Extensions.Configuration</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
