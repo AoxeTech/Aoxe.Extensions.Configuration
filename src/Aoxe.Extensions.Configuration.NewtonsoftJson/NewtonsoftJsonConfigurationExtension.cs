@@ -4,12 +4,20 @@ public static class NewtonsoftJsonConfigurationExtension
 {
     public static IConfigurationBuilder AddJsonStream(
         this IConfigurationBuilder builder,
-        Stream stream
-    ) => builder.Add(new AoxeStreamConfigurationSource(new JsonFlattener()) { Stream = stream });
+        Stream stream,
+        JsonSerializerSettings? jsonSerializerSettings = null
+    ) =>
+        builder.Add(
+            new AoxeStreamConfigurationSource(new JsonFlattener(jsonSerializerSettings))
+            {
+                Stream = stream
+            }
+        );
 
     public static IConfigurationBuilder AddJsonFile(
         this IConfigurationBuilder builder,
         string path,
+        JsonSerializerSettings? jsonSerializerSettings = null,
         bool optional = false,
         bool reloadOnChange = false,
         int reloadDelay = 250,
@@ -17,7 +25,7 @@ public static class NewtonsoftJsonConfigurationExtension
         Action<FileLoadExceptionContext>? onLoadException = null
     ) =>
         builder.Add(
-            new AoxeFileConfigurationSource(new JsonFlattener())
+            new AoxeFileConfigurationSource(new JsonFlattener(jsonSerializerSettings))
             {
                 Path = path,
                 Optional = optional,
