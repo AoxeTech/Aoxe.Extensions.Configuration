@@ -1,0 +1,5 @@
+﻿// Global using directives
+
+global using Aoxe.Extensions.Configuration;
+global using Aoxe.Extensions.Configuration.Flattener.NewtonsoftJson;
+global using Microsoft.Extensions.Configuration;

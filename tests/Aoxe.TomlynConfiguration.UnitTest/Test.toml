@@ -1,13 +1,18 @@
-﻿[tomlgeneral]
-tomlappname = "TomlMyApp"
-tomlversion = "1.2.3"
-tomlenabled = true
-fruits = ["Apple", "Banana", "Cherry"]
-[[products]]
-name = "Hammer"
-sku = 738594937
+﻿stringKey = "stringValue"
+numberKey = 123
+booleanKey = true
+nullKey = ""  # TOML does not have a native null type, so we use an empty string
 
-[[products]]
-name = "Nail"
-sku = 284758393
-color = "gray"
+[nestedObject]
+nestedStringKey = "nestedStringValue"
+nestedNumberKey = 456
+nestedBooleanKey = false
+nestedNullKey = ""  # Again, using an empty string for null
+
+arrayKey = ["arrayStringValue", 789, false, ""]
+
+[[arrayKeyWithNestedObjects]]
+arrayNestedObjectKey = "arrayNestedObjectValue"
+
+# Date and time example
+dateKey = 1979-05-27T07:32:00Z

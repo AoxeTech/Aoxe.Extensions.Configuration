@@ -9,7 +9,7 @@ public class YamlDotNetTest
         configurationBuilder.AddYamlStream(new MemoryStream(File.ReadAllBytes("./Test.yaml")));
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("nginx:latest", configuration["yamlServices:web:image"]);
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
     }
 
     [Fact]
@@ -19,7 +19,7 @@ public class YamlDotNetTest
         configurationBuilder.AddYamlStream(new MemoryStream());
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Null(configuration["yamlServices:web:image"]);
+        Assert.Null(configuration["nestedObject:nestedStringKey"]);
     }
 
     [Fact]
@@ -29,6 +29,6 @@ public class YamlDotNetTest
         configurationBuilder.AddYamlFile("./Test.yaml");
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("nginx:latest", configuration["yamlServices:web:image"]);
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
     }
 }

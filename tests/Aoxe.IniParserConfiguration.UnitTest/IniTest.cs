@@ -9,7 +9,7 @@ public class IniTest
         configurationBuilder.AddIniStream(new MemoryStream(File.ReadAllBytes("./Test.ini")));
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("IniMyApp", configuration["IniGeneral:IniAppname"]);
+        Assert.Equal("nestedStringValue", configuration["nestedSection:nestedStringKey"]);
     }
 
     [Fact]
@@ -19,7 +19,7 @@ public class IniTest
         configurationBuilder.AddIniStream(new MemoryStream());
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Null(configuration["IniGeneral:IniAppname"]);
+        Assert.Null(configuration["nestedSection:nestedStringKey"]);
     }
 
     [Fact]
@@ -29,6 +29,6 @@ public class IniTest
         configurationBuilder.AddIniFile("./Test.ini");
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("IniMyApp", configuration["IniGeneral:IniAppname"]);
+        Assert.Equal("nestedStringValue", configuration["nestedSection:nestedStringKey"]);
     }
 }

@@ -9,7 +9,7 @@ public class XmlTest
         configurationBuilder.AddXmlStream(new MemoryStream(File.ReadAllBytes("./Test.xml")));
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("xmlApp", configuration["xmlApp:xmlName"]);
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
     }
 
     [Fact]
@@ -19,7 +19,7 @@ public class XmlTest
         configurationBuilder.AddXmlStream(new MemoryStream());
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Null(configuration["xmlApp:xmlName"]);
+        Assert.Null(configuration["nestedObject:nestedStringKey"]);
     }
 
     [Fact]
@@ -29,6 +29,6 @@ public class XmlTest
         configurationBuilder.AddXmlFile("./Test.xml");
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("xmlApp", configuration["xmlApp:xmlName"]);
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
     }
 }

@@ -11,7 +11,7 @@ public class TomletTest
         );
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("TomlMyApp", configuration["tomlgeneral:tomlappname"]);
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
     }
 
     [Fact]
@@ -21,7 +21,7 @@ public class TomletTest
         configurationBuilder.AddTomlStream(new MemoryStream());
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Null(configuration["tomlgeneral:tomlappname"]);
+        Assert.Null(configuration["nestedObject:nestedStringKey"]);
     }
 
     [Fact]
@@ -31,6 +31,6 @@ public class TomletTest
         configurationBuilder.AddTomlFile("./Test.toml");
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("TomlMyApp", configuration["tomlgeneral:tomlappname"]);
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
     }
 }
