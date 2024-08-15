@@ -5,7 +5,7 @@
         <PackageVersion>2024.1.1</PackageVersion>
         <Version>2024.1.1</Version>
         <Description>Implements of stream and file configurations.</Description>
-        <PackageTags>Aoxe;Serializer;Parser;Flattener;Abstractions</PackageTags>
+        <PackageTags>Aoxe;Configuration;Stream Configuration;File Configuration</PackageTags>
         <PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
         <RepositoryUrl>https://github.com/AoxeTech/Aoxe.Extensions.Configuration</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
