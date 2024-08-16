@@ -2,5 +2,5 @@
 
 public interface IFlattener
 {
-    Dictionary<string, string?> Flatten(Stream stream);
+    IDictionary<string, string?> Flatten(Stream stream);
 }

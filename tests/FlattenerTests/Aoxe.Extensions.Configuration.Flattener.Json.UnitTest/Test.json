@@ -1,0 +1,21 @@
+﻿{
+  "stringKey": "stringValue",
+  "numberKey": 123,
+  "booleanKey": true,
+  "nullKey": null,
+  "nestedObject": {
+    "nestedStringKey": "nestedStringValue",
+    "nestedNumberKey": 456,
+    "nestedBooleanKey": false,
+    "nestedNullKey": null
+  },
+  "arrayKey": [
+    "arrayStringValue",
+    789,
+    false,
+    null,
+    {
+      "arrayNestedObjectKey": "arrayNestedObjectValue"
+    }
+  ]
+}

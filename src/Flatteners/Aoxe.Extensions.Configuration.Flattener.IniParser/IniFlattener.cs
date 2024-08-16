@@ -2,7 +2,7 @@
 
 public class IniFlattener : IFlattener
 {
-    public Dictionary<string, string?> Flatten(Stream stream)
+    public IDictionary<string, string?> Flatten(Stream stream)
     {
         var result = new Dictionary<string, string?>();
         if (stream.IsNullOrEmpty())
