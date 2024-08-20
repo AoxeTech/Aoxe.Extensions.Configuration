@@ -122,7 +122,7 @@ PM> Install-Package Aoxe.Extensions.Configuration.Tomlyn
 
 Now we can use it like this:
 
-```chsarp
+```csharp
 var configurationBuilder = new ConfigurationBuilder();
 configurationBuilder.AddTomlFile("./Test.toml");
 IConfiguration configuration = configurationBuilder.Build();
