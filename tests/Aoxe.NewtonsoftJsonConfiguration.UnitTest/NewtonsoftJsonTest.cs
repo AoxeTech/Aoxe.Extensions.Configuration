@@ -9,7 +9,7 @@ public class NewtonsoftJsonTest
         configurationBuilder.AddJsonStream(new MemoryStream(File.ReadAllBytes("./Test.json")));
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("JsonApp", configuration["jsonApp:jsonName"]);
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
     }
 
     [Fact]
@@ -19,7 +19,7 @@ public class NewtonsoftJsonTest
         configurationBuilder.AddJsonStream(new MemoryStream());
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Null(configuration["jsonApp:jsonName"]);
+        Assert.Null(configuration["nestedObject:nestedStringKey"]);
     }
 
     [Fact]
@@ -29,6 +29,6 @@ public class NewtonsoftJsonTest
         configurationBuilder.AddJsonFile("./Test.json");
         IConfiguration configuration = configurationBuilder.Build();
 
-        Assert.Equal("JsonApp", configuration["jsonApp:jsonName"]);
+        Assert.Equal("nestedStringValue", configuration["nestedObject:nestedStringKey"]);
     }
 }
