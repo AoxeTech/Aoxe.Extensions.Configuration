@@ -1,13 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net6.0;net8.0;net9.0</TargetFrameworks>
-        <PackageVersion>2024.2.0</PackageVersion>
-        <Version>2024.2.0</Version>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageVersion>2024.2.2</PackageVersion>
+        <Version>2024.2.2</Version>
         <Description>The abstractions for Aoxe Configuration flatteners.</Description>
         <PackageTags>Aoxe;Serializer;Parser;Flattener;Abstractions</PackageTags>
         <PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
         <RepositoryUrl>https://github.com/AoxeTech/Aoxe.Extensions.Configuration</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
@@ -27,6 +28,10 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="../../../README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>
