@@ -1,0 +1,43 @@
+﻿<Solution>
+  <Folder Name="/src/">
+    <Project Path="src\Aoxe.Extensions.Configuration.IniParser\Aoxe.Extensions.Configuration.IniParser.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.NewtonsoftJson\Aoxe.Extensions.Configuration.NewtonsoftJson.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.SharpYaml\Aoxe.Extensions.Configuration.SharpYaml.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Tomlet\Aoxe.Extensions.Configuration.Tomlet.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Tomlyn\Aoxe.Extensions.Configuration.Tomlyn.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.YamlDotNet\Aoxe.Extensions.Configuration.YamlDotNet.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration\Aoxe.Extensions.Configuration.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/src/Flatteners/">
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.Abstractions\Aoxe.Extensions.Configuration.Flattener.Abstractions.csproj" Type="Classic C#" />
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.IniParser\Aoxe.Extensions.Configuration.Flattener.IniParser.csproj" Type="Classic C#" />
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.Ini\Aoxe.Extensions.Configuration.Flattener.Ini.csproj" Type="Classic C#" />
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.Json\Aoxe.Extensions.Configuration.Flattener.Json.csproj" Type="Classic C#" />
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.NewtonsoftJson\Aoxe.Extensions.Configuration.Flattener.NewtonsoftJson.csproj" Type="Classic C#" />
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.SharpYaml\Aoxe.Extensions.Configuration.Flattener.SharpYaml.csproj" Type="Classic C#" />
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.Tomlet\Aoxe.Extensions.Configuration.Flattener.Tomlet.csproj" Type="Classic C#" />
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.Tomlyn\Aoxe.Extensions.Configuration.Flattener.Tomlyn.csproj" Type="Classic C#" />
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.Xml\Aoxe.Extensions.Configuration.Flattener.Xml.csproj" Type="Classic C#" />
+    <Project Path="src\Flatteners\Aoxe.Extensions.Configuration.Flattener.YamlDotNet\Aoxe.Extensions.Configuration.Flattener.YamlDotNet.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\Aoxe.Configuration.UnitTest\Aoxe.Configuration.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.IniParserConfiguration.UnitTest\Aoxe.IniParserConfiguration.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.NewtonsoftJsonConfiguration.UnitTest\Aoxe.NewtonsoftJsonConfiguration.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.SharpYamlConfiguration.UnitTest\Aoxe.SharpYamlConfiguration.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.TomletConfiguration.UnitTest\Aoxe.TomletConfiguration.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.TomlynConfiguration.UnitTest\Aoxe.TomlynConfiguration.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.YamlDotNetConfiguration.UnitTest\Aoxe.YamlDotNetConfiguration.UnitTest.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/tests/FlattenerTests/">
+    <Project Path="tests\FlattenerTests\Aoxe.Extensions.Configuration.Flattener.Ini.UnitTest\Aoxe.Extensions.Configuration.Flattener.Ini.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\FlattenerTests\Aoxe.Extensions.Configuration.Flattener.IniParser.UnitTest\Aoxe.Extensions.Configuration.Flattener.IniParser.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\FlattenerTests\Aoxe.Extensions.Configuration.Flattener.Json.UnitTest\Aoxe.Extensions.Configuration.Flattener.Json.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\FlattenerTests\Aoxe.Extensions.Configuration.Flattener.NewtonsoftJson.UnitTest\Aoxe.Extensions.Configuration.Flattener.NewtonsoftJson.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\FlattenerTests\Aoxe.Extensions.Configuration.Flattener.SharpYaml.UnitTest\Aoxe.Extensions.Configuration.Flattener.SharpYaml.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\FlattenerTests\Aoxe.Extensions.Configuration.Flattener.Tomlet.UnitTest.UnitTest\Aoxe.Extensions.Configuration.Flattener.Tomlet.UnitTest.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\FlattenerTests\Aoxe.Extensions.Configuration.Flattener.Tomlyn.UnitTest\Aoxe.Extensions.Configuration.Flattener.Tomlyn.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\FlattenerTests\Aoxe.Extensions.Configuration.Flattener.Xml.UnitTest\Aoxe.Extensions.Configuration.Flattener.Xml.UnitTest.csproj" Type="Classic C#" />
+    <Project Path="tests\FlattenerTests\Aoxe.Extensions.Configuration.Flattener.YamlDotNet.UnitTest\Aoxe.Extensions.Configuration.Flattener.YamlDotNet.UnitTest.csproj" Type="Classic C#" />
+  </Folder>
+</Solution>
