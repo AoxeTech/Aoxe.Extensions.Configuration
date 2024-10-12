@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;net6.0;net8.0;net9.0</TargetFrameworks>
-        <PackageVersion>2024.2.4</PackageVersion>
-        <Version>2024.2.4</Version>
+        <PackageVersion>2024.2.5</PackageVersion>
+        <Version>2024.2.5</Version>
         <Description>The Aoxe Configuration flattener implement by Microsoft.Extensions.Configuration.Json.</Description>
         <PackageTags>Aoxe;Serializer;Parser;Flattener;xml</PackageTags>
         <PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
@@ -26,12 +26,12 @@
     <ItemGroup>
         <PackageReference Include="Aoxe.Extensions" Version="2024.2.4" />
         <PackageReference Include="Aoxe.Extensions.Configuration.Flattener.Abstractions" Version="2024.2.2" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.1" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="System.Text.Json" Version="8.0.4" />
+        <PackageReference Include="System.Text.Json" Version="8.0.5" />
     </ItemGroup>
 
     <ItemGroup>
