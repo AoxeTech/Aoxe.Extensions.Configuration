@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net8.0;net9.0</TargetFrameworks>
-        <PackageVersion>2025.1.0</PackageVersion>
-        <Version>2025.1.0</Version>
+        <TargetFrameworks>netstandard2.0;net8.0;net10.0</TargetFrameworks>
+        <PackageVersion>2025.1.2</PackageVersion>
+        <Version>2025.1.2</Version>
         <Description>The Aoxe Configuration flattener implement by Newtonsoft.Json.</Description>
         <PackageTags>Aoxe;Serializer;Parser;Flattener;Newtonsoft.Json</PackageTags>
         <PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
@@ -24,7 +24,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aoxe.Extensions" Version="2025.1.0" />
+        <PackageReference Include="Aoxe.Extensions" Version="2025.3.0" />
         <PackageReference Include="Aoxe.Extensions.Configuration.Flattener.Abstractions" Version="2025.1.0" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
